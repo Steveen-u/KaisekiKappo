@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans SC", sans-serif;
+  position: relative;
+  background-color: #f2d1a4;
+  overflow-x: hidden;
+}
+
+.noto-sans-sc {
+  font-family: "Noto Sans SC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 1400;
+  color: white;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+
+.navbar-brand {
+  margin-top: 10px;
+}
+
+.menuContainer {
+  margin-right: 40px;
+  margin-top: 25px;
+}
+
+.fa-solid {
+  cursor: pointer;
+  position: fixed;
+  top: 10px; 
+  right: 20px;
+  z-index: 1000;
+}
+
+.menuOptions {
+  display: none;
+  width: 250px;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.menuOptions a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.reserveText {
+  width: 50%;
+  height: 100%;
+  margin-top: 150px;
+}
+
+.reserveText p {
+  font-size: 25px;
+  font-weight: 500;
+  color: #000;
+  align-items: right;
+  justify-content: right;
+}
+
+.reserve {
+  width: 50%;
+  height: 100vh;
+  margin-top: 150px;
+}
+
+.dateInput {
+  box-sizing: inherit;
+  color: #000; /* Color de texto */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer;
+  border: none; /* Sin borde */
+}
+
+
+/* Aplicar estilos al input de tipo date */
+#date {
+  /* Establecer un ancho personalizado */
+  width: 200px;
+  /* Cambiar el color del texto */
+  color: black;
+  border: none;
+  /* Cambiar el tamaño del texto */
+  font-size: 16px;
+  /* Cambiar el espacio entre el borde y el contenido */
+  padding: 5px;
+  /* Cambiar el cursor al pasar por encima */
+  cursor: pointer; /* Esto puede variar en algunos navegadores */
+  /* Cambiar la apariencia del calendario desplegable */
+  appearance: none; /* Esto puede variar en algunos navegadores */
+  background-color: #f2d1a4;
+}
+
+#date:active,
+#date:focus {
+  border: none;
+  outline: none; /* Quita el contorno de enfoque */
+}
+
+/* Estilo para el contenedor del calendario */
+#date::-webkit-calendar-picker-indicator {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
