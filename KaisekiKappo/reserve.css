@@ -67,7 +67,6 @@ body {
 
 .reserve {
   width: 50%;
-  height: 100vh;
   margin-top: 150px;
 }
 
@@ -80,34 +79,36 @@ body {
   border: none; /* Sin borde */
 }
 
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
 
-/* Aplicar estilos al input de tipo date */
-#date {
-  /* Establecer un ancho personalizado */
-  width: 200px;
-  /* Cambiar el color del texto */
-  color: black;
-  border: none;
-  /* Cambiar el tamaño del texto */
-  font-size: 16px;
-  /* Cambiar el espacio entre el borde y el contenido */
-  padding: 5px;
-  /* Cambiar el cursor al pasar por encima */
-  cursor: pointer; /* Esto puede variar en algunos navegadores */
-  /* Cambiar la apariencia del calendario desplegable */
-  appearance: none; /* Esto puede variar en algunos navegadores */
+form input{
   background-color: #f2d1a4;
-}
-
-#date:active,
-#date:focus {
   border: none;
-  outline: none; /* Quita el contorno de enfoque */
 }
 
-/* Estilo para el contenedor del calendario */
-#date::-webkit-calendar-picker-indicator {
+form select {
+  background-color: #f2d1a4;
+  border: none;
+}
+
+label, input, select {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  padding: 5px;
+  cursor: pointer;
 }
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
