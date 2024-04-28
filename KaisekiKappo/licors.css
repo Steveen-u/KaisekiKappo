@@ -104,3 +104,23 @@ body {
     width: 100%;
     justify-content: space-evenly;
 }
+
+@media only screen and (max-width: 600px) {
+
+  .container h2 {
+    margin-top: 70px;
+  }
+  .firstCards, .secondCards {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .firstCards .card, .secondCards .card {
+    width: 70%;
+  }
+
+  .card-body {
+    height: auto !important;
+  }
+}
